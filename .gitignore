@@ -1,4 +1,5 @@
 venv/
 Dataset_Proiect/
 Dataset_Proiect_Split/
+*.zip
 *.csv
