@@ -5,6 +5,8 @@ import random
 random.seed(42)
 
 def split_date():
+    if os.path.exists("Dataset_Proiect_Split"):
+        shutil.rmtree("Dataset_Proiect_Split")
     if not os.path.exists("Dataset_Proiect"):
         return
 
