@@ -47,7 +47,7 @@ for epoch in range(10):
     total_val=0
 
     with torch.no_grad():
-        for images,labeles in val_loader:
+        for images,labels in val_loader:
             images,labels=images.to(device),labels.to(device)
             outputs=model(images)
             loss=criterion(outputs,labels)
